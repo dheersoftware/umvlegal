@@ -1,0 +1,669 @@
+ 
+  /* Section Container */
+  .section-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  /* Section Image */
+  .section-image {
+    position: relative;
+    flex: 1;
+  }
+  
+@media (max-width: 768px) {
+  .section-container  {
+      flex-direction: column; /* Stack Image on Top */
+  }
+
+  .section-image{
+      order: -1; /* Moves Image to the Top */
+  }
+}
+  .section-image img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .experience-tag {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #2F608B;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .section-content {
+    flex: 1;
+    padding-left: 20px;
+  }
+  /* Large Screens and Laptop */
+@media (min-width: 1024px) {
+    .section-content {
+      padding-left: 30px;
+      font-size: 18px; /* Larger text for bigger screens */
+    }
+  
+    .experience-tag {
+      font-size: 20px; /* Slightly larger experience tag for larger screens */
+      padding: 12px 18px; /* Larger padding */
+    }
+  }
+  
+  /* Tablets and Small Laptops */
+  @media (max-width: 1024px) and (min-width: 768px) {
+    .section-image {
+      flex: 1 1 50%; /* Half width for section-image */
+    }
+  
+    .section-content {
+      flex: 1 1 50%; /* Half width for section-content */
+      padding-left: 15px;
+    }
+  
+    .experience-tag {
+      font-size: 18px;
+      padding: 10px 15px;
+    }
+  }
+  
+  /* Small Mobile Screens (480px and below) */
+  @media (max-width: 480px) {
+    .section-image,
+    .section-content {
+      flex: 1 1 100%; /* Full width for both image and content */
+      padding-left: 10px;
+    }
+  
+    .experience-tag {
+      font-size: 16px;
+      padding: 8px 12px;
+      top: 10px;
+      left: 10px;
+    }
+  }
+  
+  /* Mobile Screens (Below 768px) */
+  @media (max-width: 768px) {
+    .section-image {
+      flex: 1 1 100%; /* Full width for image on smaller devices */
+    }
+  
+    .section-content {
+      flex: 1 1 100%; /* Full width for content on smaller devices */
+      padding-left: 10px;
+    }
+  
+    .experience-tag {
+        font-size: 10px;
+        padding: 6px 2px;
+        top: -12px;
+        left: 10px;
+    }
+  }
+  /* Headings, Subheadings, and Paragraphs with the desired font */
+  .section-subtitle,
+  .section-title,
+  .section-text,
+  .choose-subtitle,
+  .choose-title,
+  .choose-text h4,
+  .choose-text p,
+  .appointment-form h2,
+  .timeline-title,
+  .timeline-description {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  /* Section Subheading */
+  .section-subtitle {
+    color: #2F608B;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  /* Section Title */
+  .section-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  /* Section Text */
+  .section-text {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  /* Buttons */
+  .section-button {
+    background-color: #2F608B;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .section-button:hover {
+    background-color: #2F608B;
+  }
+  
+  /* Choose Us Section */
+  .choose-container {
+    position: relative;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+@media screen and (max-width: 1200px) {
+    .choose-container {
+      max-width: 100%; /* Adjust for medium screens */
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .choose-container {
+      padding: 0 10px; /* Add some padding for tablets and smaller devices */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .choose-container {
+      padding: 0 5px; /* Adjust padding for mobile phones */
+    }
+  }
+  .choose-image {
+    position: relative;
+    width: 100%;
+    margin-left: 80px;
+  }
+  
+  .choose-image img {
+    width: 500px;
+    height: 550px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  @media screen and (max-width: 768px) {
+    .choose-image {
+        margin-left: 5%; /* Reduce margin on smaller screens */
+    }
+
+    .choose-image img {
+        max-width: 100%; /* Makes sure the image fits smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .choose-image {
+        margin-left: 0; /* Remove left margin for very small screens */
+    }
+
+    .choose-image img {
+        width: 90%; /* Makes the image smaller on very small screens */
+        max-width: none; /* Prevents max-width limitation */
+    }
+}
+  
+  .choose-content {
+    position: absolute;
+    top: 50%;
+    right: 20%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    width: 40%;
+    height: 370px;
+    border-radius: 8px;
+  }
+  
+
+/* For smaller screens like tablets or mobile */
+@media (max-width: 1024px) {
+    .choose-content {
+      width: 60%;
+      right: 10%;
+      height: auto; /* Allow height to adjust based on content */
+    }
+  }
+  
+  /* For mobile devices */
+  @media (max-width: 768px) {
+    .choose-content {
+        width: 68%;
+        right: 24%;
+        height: auto;
+        top: 45%;
+        padding: 30px;
+    }
+  }
+  
+  /* For very small screens (portrait mode) */
+  @media (max-width: 480px) {
+    .choose-content {
+      width: 90%;
+      right: 5%;
+      top: 50%; /* Adjust top position for better visual spacing */
+      padding: 10px; /* Reduce padding on smaller screens */
+    }
+  }
+  .choose-subtitle {
+    color: #2F608B;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+  }
+  
+  .choose-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  /* For tablets and smaller devices */
+@media screen and (max-width: 768px) {
+    .choose-subtitle {
+      font-size: 12px; /* Adjust font size for smaller screens */
+      letter-spacing: 1.5px; /* Adjust letter spacing */
+      margin-bottom: 8px; /* Adjust margin */
+    }
+  
+    .choose-title {
+      font-size: 28px; /* Adjust font size */
+      margin-bottom: 15px; /* Adjust margin */
+    }
+  }
+  
+  /* For mobile phones and very small devices */
+  @media screen and (max-width: 480px) {
+    .choose-subtitle {
+      font-size: 10px; /* Adjust font size for mobile screens */
+      letter-spacing: 1px; /* Adjust letter spacing */
+      margin-bottom: 6px; /* Adjust margin */
+    }
+  
+    .choose-title {
+      font-size: 24px; /* Adjust font size */
+      margin-bottom: 12px; /* Adjust margin */
+    }
+  }
+  .choose-items {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .choose-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  
+  .choose-number {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2F608B;
+    flex-shrink: 0;
+  }
+  /* Responsive styling for smaller screens */
+@media screen and (max-width: 768px) {
+    .choose-items {
+      flex-direction: row; /* Stack horizontally on tablets and smaller screens */
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  
+    .choose-item {
+      width: 48%; /* Adjust item width to fit two items per row */
+    }
+  
+    .choose-number {
+      font-size: 20px; /* Adjust font size for smaller screens */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .choose-items {
+      flex-direction: column; /* Revert to column layout on mobile */
+    }
+  
+    .choose-item {
+      width: 100%; /* Each item takes full width on mobile */
+      flex-direction: column; /* Stack items vertically */
+    }
+  
+    .choose-number {
+      font-size: 18px; /* Adjust font size for mobile screens */
+    }
+  }
+  .choose-text h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+    color: #333;
+    line-height: 20px;
+  }
+  
+  .choose-text p {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0 0;
+    line-height: 20px;
+  }
+  
+/* Responsive design */
+@media (max-width: 1200px) {
+    .choose-text h4 {
+      font-size: 16px;
+    }
+  
+    .choose-text p {
+      font-size: 13px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .choose-text h4 {
+      font-size: 14px;
+    }
+  
+    .choose-text p {
+      font-size: 12px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .choose-text h4 {
+      font-size: 12px;
+    }
+  
+    .choose-text p {
+      font-size: 11px;
+    }
+  }
+  /* Appointment Section */
+  .appointment-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .appointment-form {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 10px;
+    width: 500px;
+    height: 550px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: #fff;
+  }
+  
+  .appointment-form h2 {
+    font-size: 24px;
+    margin-bottom: 45px;
+    font-weight: bold;
+  }
+  
+  .appointment-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .appointment-form input,
+  .appointment-form select {
+    padding: 10px;
+    font-size: 14px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  .appointment-form .date-time {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .appointment-form .date-time input {
+    flex: 1;
+  }
+  
+  .appointment-form button {
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #2F608B;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .appointment-form button:hover {
+    background-color: #2F608B;
+  }
+  
+  /* Vertical Center Line */
+  .timeline-line {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background-color: #2F608B;
+    transform: translateX(-50%);
+  }
+  /* Timeline Container */
+  #recent-prizes-about-us{
+    background-image: url('../pics/6.png'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+  }
+  .timeline {
+   
+    position: relative;
+    padding: 50px 0;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  /* Timeline Item Styles */
+  .timeline-item {
+    position: relative;
+    width: 45%;
+    padding: 20px;
+    background: #1c1c1c;
+    color: #fff;
+    border-radius: 8px;
+    margin: 20px 0;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .timeline-item.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .timeline-item.left {
+    left: 4%;
+  }
+  
+  .timeline-item.right {
+    left: 51%;
+  }
+  
+  /* Connector Circle */
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: #2F608B;
+    border-radius: 50%;
+    top: 20px;
+    border: 4px solid #1c1c1c;
+  }
+  
+  .timeline-item.left::before {
+    right: -12px;
+  }
+  
+  .timeline-item.right::before {
+    left: -12px;
+  }
+  
+  /* Year Badge */
+  .timeline-year {
+    display: inline-block;
+    background: #2F608B;
+    color: white;
+    padding: 5px 10px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border-radius: 4px;
+  }
+  
+  /* Title */
+  .timeline-title {
+    margin: 0 0 10px;
+    font-size: 1.2em;
+    font-style: italic;
+    color: white;
+  }
+  
+  /* Description */
+  .timeline-description {
+    margin: 0;
+    line-height: 1.5;
+    font-size: 0.95em;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .timeline-item {
+      width: 90%;
+      left: 5%;
+    }
+  
+    .timeline-item.left,
+    .timeline-item.right {
+      left: 5%;
+    }
+  
+    .timeline-item::before {
+      left: -12px;
+    }
+  }
+  
+  /* about-us  *//* Main container */
+  .about-us {
+    width: 80%;
+    margin: 0 auto;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    color: #333;
+    line-height: 1.8;
+  }
+  
+  /* Headings styling */
+  .heading {
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 0.8s ease-out;
+  }
+  
+  /* Subheadings styling */
+  .subheading {
+    font-size: 1.7rem;
+    font-style: italic;
+    font-weight: bold;
+    color: #555;
+    margin-top: 30px;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 0.8s ease-out;
+  }
+  
+  /* Paragraph styling */
+  .paragraph {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: all 0.8s ease-out;
+  }
+  
+  /* In-view animation */
+  .in-view {
+    opacity: 1;
+    transform: translateX(0) translateY(0);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .heading,
+    .subheading,
+    .paragraph {
+      font-size: 1rem;
+      transform: translateY(20px);
+    }
+  }
+  
+  /* Specific Heading Style */
+  #headings-aboutus {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    color: #1e355e;
+    margin-bottom: 10px;
+  }
+  
+  #headings-aboutus h2 {
+    font-weight: bold;
+    margin: 50px;
+  }
+  #para-umv-about-us{
+    background-image: url('../pics/4.png'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 30px;
+  }

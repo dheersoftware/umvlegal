@@ -1,0 +1,234 @@
+/* General CSS for the criminal page, you can tweak as needed */
+
+#litigationbody{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    overflow-x: hidden;
+}
+
+.civil-banner {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    padding: 150px 20px;
+    text-align: center;
+    position: relative;
+    height: 130px;
+    transition: background-image 1s ease-in-out;
+    overflow: hidden;
+}
+
+.civil-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+.civil-banner h1, .civil-banner p {
+    font-family: 'Oswald', sans-serif;
+    position: relative;
+    z-index: 2;
+}
+
+.civil-banner h1 {
+    margin-bottom: 10px;
+    font-size: 2.5em;
+    letter-spacing: 1px;
+}
+
+.civil-banner p {
+    font-size: 1.2em;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.civil-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.civil-content-section {
+    margin-bottom: 40px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.civil-content-section.active{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.civil-content-section h2 {
+    font-family: 'Oswald', sans-serif;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    position: relative;
+    display: inline-block;
+}
+
+.civil-content-section h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: #2f608b;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease;
+}
+.civil-content-section:hover h2::after {
+    transform: scaleX(1);
+}
+
+.civil-content-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+.civil-content-section li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 10px;
+}
+.civil-content-section li::before {
+    content: '\2022';
+    color: #2f608b;
+    position: absolute;
+    left: 0;
+    top: 5px;
+}
+
+
+.civil-content-section p {
+    line-height: 1.6;
+}
+.civil-content-section a{
+    color: #2f608b;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+.civil-content-section a:hover{
+    color: #2f608b;
+}
+
+.civil-animated-section {
+    background-color: #333;
+    color: white;
+    padding: 40px 0;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 40px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+    height: 55px; 
+    display: flex; 
+    align-items: center; 
+}
+
+.civil-animated-section.active{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.civil-animated-section .civil-footer-content {
+    position: absolute;
+    white-space: nowrap;
+    animation: marquee 20s linear infinite;
+    width: max-content;
+    font-size: 10px; 
+
+}
+
+@keyframes marquee {
+    from { transform: translateX(100%); }
+    to { transform: translateX(-100%); }
+}
+
+.civil-animated-section .civil-footer-content i{
+    margin:0 25px; 
+  font-size: 3em; 
+
+}
+
+.ip-categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.ip-card {
+    width: calc(25% - 20px);
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.ip-card:hover {
+    transform: translateY(-5px);
+}
+
+.ip-card i {
+    font-size: 3em;
+    color: #2f608b;
+    margin-bottom: 10px;
+}
+
+.ip-card h3 {
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.services-content-card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.services-content-card:hover {
+    transform: translateY(-5px);
+}
+
+.services-content-card i{
+    font-size: 3em;
+    color: #2f608b;
+    margin-bottom: 10px;
+}
+.services-content-card h2 {
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 10px;
+}

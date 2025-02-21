@@ -1,0 +1,178 @@
+#our-services-main-section{
+    margin-top: 50px;
+}
+#our-services{
+    text-align: center;
+    font-weight: bolder;
+    font-family: "Playfair Display", serif;
+    font-size: 18px;
+    }
+    /* Container for the background image */
+    .background-container {
+    background-image: url("../pics/bluetexture1.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 70vh; /* Full screen height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    }
+    
+    /* Content container to use flex */
+    .content {
+    display: flex;
+    align-items: flex-start;
+    max-width: 1020px;
+    font-weight: bolder;
+    padding: 20px;
+    border-radius: 10px;
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); Optional shadow for depth */
+    }
+    
+    /* Styling for the image */
+    .side-image {
+    width: 290px; /* Adjust as needed */
+    height: auto;
+    margin-right: 50px;
+    border-radius: 8px; /* Optional rounded corners */
+    margin-top: 150px
+    }
+    
+    @media (max-width: 768px) {
+    .content {
+      flex-direction: column; /* Stack content vertically */
+      align-items: center; /* Center-align content */
+      text-align: center; /* Center-align text */
+    }
+    
+    .side-image {
+      width: 80%; /* Scale image to fit the screen width */
+      margin: 20px 0; /* Add spacing above and below the image */
+      margin-top: 0; /* Remove additional top margin */
+    }
+    }
+    
+    /* Responsive design for mobile phones */
+    @media (max-width: 480px) {
+    .background-container {
+      padding: 10px; /* Reduce padding for smaller screens */
+      height: auto; /* Adjust height for smaller screens */
+    }
+    
+    .content {
+      padding: 15px; /* Reduce padding */
+      box-shadow: none; /* Optional: remove shadow for simpler design */
+    }
+    
+    .side-image {
+      width: 100%; /* Image takes full width */
+      margin-right: 0; /* Remove right margin */
+    }
+    }
+    
+    /* Styling for the text */
+    .text-content {
+    font-family: 'Cursive', sans-serif;
+    font-style: italic;
+    font-size: 16px; /* Adjust as needed */
+    color: rgb(0, 0, 0); /* Text color */
+    line-height: 1.6;
+    }
+    
+    .text-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    }
+    
+    .text-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    }
+    
+    .text-content li {
+    margin-bottom: 8px;
+    }
+    
+    .text-content strong {
+    font-weight: bold;
+    }
+    
+    .text-content p strong {
+    margin-left: 170px;
+    font-size: 28px;
+    }
+    
+    .background-container-one {
+    background-image: url("../pics/8.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 90vh; /* Full screen height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    }
+    .background-container-two {
+    background-image: url("../pics/10.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 70vh; /* Full screen height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    }
+    
+    .content-black {
+    display: flex;
+    align-items: flex-start;
+    max-width: 1020px;
+    font-weight: bolder;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3); /* Optional shadow for depth */
+    }
+    /* Styling for the text */
+    .text-content-black {
+    font-family: 'Cursive', sans-serif;
+    font-style: italic;
+    font-size: 16px; /* Adjust as needed */
+    color: rgb(255, 255, 255); /* Text color */
+    line-height: 1.6;
+    }
+    
+    .text-content-black h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    }
+    
+    .text-content-black ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    }
+    
+    .text-content-black li {
+    margin-bottom: 8px;
+    }
+    
+    .text-content-black strong {
+    font-weight: bold;
+    }
+    
+    .text-content-black p strong {
+    margin-left: 100px;
+    font-size: 28px;
+    }
+    .background-container-three {
+    background-image: url("../pics/7.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 70vh; /* Full screen height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    }
+    
+    

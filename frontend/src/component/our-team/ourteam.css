@@ -1,0 +1,248 @@
+a,
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+    outline: none
+}
+
+a {
+    font-style: normal;
+    text-decoration: none;
+    transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -webkit-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease
+}
+
+a,
+a:active,
+a:focus {
+    color: #333;
+    text-decoration: none;
+    transition-timing-function: ease-in-out;
+    -ms-transition-timing-function: ease-in-out;
+    -moz-transition-timing-function: ease-in-out;
+    -webkit-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    transition-duration: .2s;
+    -ms-transition-duration: .2s;
+    -moz-transition-duration: .2s;
+    -webkit-transition-duration: .2s;
+    -o-transition-duration: .2s
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+img {
+    max-width: 100%;
+    height: auto
+}
+
+
+
+
+.speakers-section-three {
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    background-image: url("../pics/bluetexture1.jpg");
+}
+
+.speaker-block-three {
+    position: relative;
+    margin-bottom: 50px
+}
+
+.speaker-block-three .inner-box {
+    position: relative;
+    background-color: #fff;
+    overflow: hidden;
+    padding-bottom: 30px;
+    max-width: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, .1);
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 600ms ease;
+    -ms-transition: all 600ms ease;
+    -o-transition: all 600ms ease;
+    transition: all 600ms ease
+}
+
+.speaker-block-three .inner-box:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, .1)
+}
+
+.speaker-block-three .image-box {
+    position: relative;
+    display: block;
+    text-align: center;
+    padding: 50px 0
+}
+
+.speaker-block-three .image-box:before {
+    position: absolute;
+    left: -10px;
+    right: -10px;
+    top: -4px;
+    height: 100%;
+    background-image: url("../pics/bluebgpassport.jpg");
+    -webkit-transform: scale(-1);
+    -moz-transform: scale(-1);
+    -ms-transform: scale(-1);
+    -o-transform: scale(-1);
+    transform: scale(-1);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: cover;
+    content: ""
+}
+
+.speaker-block-three .image-box .image {
+    position: relative;
+    display: inline-block;
+    height: 130px;
+    width: 130px;
+    overflow: hidden;
+    border: 4px solid #2f608b;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .3);
+    border-radius: 50%;
+    z-index: 9;
+    margin-bottom: 0;
+    -webkit-transition: all 600ms ease;
+    -ms-transition: all 600ms ease;
+    -o-transition: all 600ms ease;
+    -moz-transition: all 600ms ease;
+    transition: all 600ms ease
+}
+
+.speaker-block-three .inner-box:hover .image-box .image {
+    border-radius: 0
+}
+
+.speaker-block-three .image-box .image img {
+    display: block;
+    width: 100%;
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease
+}
+
+.speaker-block-three .inner-box:hover .image img {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1)
+}
+
+.speaker-block-three .info-box {
+    position: relative;
+    display: inline-block;
+    padding: 10px 30px;
+    padding-right: 10px;
+    background-color: #2f608b
+}
+
+.speaker-block-three .info-box:before {
+    position: absolute;
+    left: 0;
+    right: -30px;
+    background-color: #2f608b;
+    content: "";
+    top: 0;
+    height: 100%;
+    -webkit-transform: skew(-30deg);
+    -moz-transform: skew(-30deg);
+    -ms-transform: skew(-30deg);
+    -o-transform: skew(-30deg);
+    transform: skew(-30deg);
+    border-radius: 0 14px 14px 0
+}
+
+.speaker-block-three .info-box .name {
+    position: relative;
+    font-size: 18px;
+    line-height: 1.2em;
+    color: #fff;
+    font-weight: 500
+}
+
+.speaker-block-three .info-box .name a {
+    color: #fff;
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease
+}
+
+.speaker-block-three .info-box .name a:hover {
+    color: #fff
+}
+
+.speaker-block-three .info-box .designation {
+    position: relative;
+    display: block;
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff;
+    font-weight: 400
+}
+
+.speaker-block-three .social-box {
+    position: absolute;
+    top: 90px;
+    transform: translateX(-50px);
+    -webkit-transition: all 600ms ease;
+    -ms-transition: all 600ms ease;
+    -o-transition: all 600ms ease;
+    -moz-transition: all 600ms ease;
+    transition: all 600ms ease
+}
+
+.speaker-block-three .social-box .social-links li {
+    margin-bottom: 4px
+}
+
+.speaker-block-three .inner-box:hover .social-box {
+    transform: translateX(10px)
+}
+
+.speaker-block-two .social-links li {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 10px
+}
+
+.speaker-block-three .social-links li a i {
+    position: relative;
+    display: block;
+    width: 32px;
+    height: 32px;
+    border: 1px solid #eee;
+    font-size: 16px;
+    line-height: 30px;
+    background-color: #fff;
+    text-align: center;
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease
+}
+
+.speaker-block-three .social-links li a:hover i {
+    color: #fff;
+    background: #2f608b
+}

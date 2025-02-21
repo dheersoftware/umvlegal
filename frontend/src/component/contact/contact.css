@@ -1,0 +1,72 @@
+  /* Appointment Section */
+  .appointment-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .appointment-form {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 10px;
+    width: 500px;
+    height: 510px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: #fff;
+  }
+  
+  .appointment-form h2 {
+    font-size: 24px;
+    margin-bottom: 45px;
+    font-weight: bold;
+  }
+  
+  .appointment-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .home-emergencycase-container-emergency-section p{
+    color: white;
+  }
+  .appointment-form input,
+  .appointment-form select {
+    padding: 10px;
+    font-size: 14px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  .appointment-form .date-time {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .appointment-form .date-time input {
+    flex: 1;
+  }
+  
+  .appointment-form button {
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #2F608B;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .appointment-form button:hover {
+    background-color: #2F608B;
+  }
+  

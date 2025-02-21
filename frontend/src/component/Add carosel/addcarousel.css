@@ -1,0 +1,219 @@
+#addcarouseldiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Use min-height to ensure it's always at least the viewport height */
+  width: 100%;
+  padding: 20px 0; /* Add some top/bottom padding in case it does not fill 100vh */
+
+  
+}
+
+.containerrs {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px; /* Changed from 70px 30px */
+  max-width: 497px;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;  /* Center the container horizontally and remove margin-top */
+  max-height: 80vh; /* Limit the maximum height of the container */
+  overflow-y: auto;  /* Allow vertical scrolling */
+}
+
+/* Medium screens: Tablets */
+@media (max-width: 1024px) and (min-width: 768px) {
+.containerrs {
+  margin: 0 20px; /* Ensure it has some margin on tablets */
+}
+}
+
+/* Small screens: Mobile phones */
+@media (max-width: 768px) {
+.containerrs {
+  padding: 20px;  /* Reduce padding on mobile */
+}
+}
+
+/* Extra small screens: Very small mobile devices */
+@media (max-width: 480px) {
+.containerrs {
+  padding: 20px;
+}
+}
+
+/* Rest of your CSS remains mostly the same */
+
+.containerrs h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.containerrs input[type="text"],
+.containerrs textarea,
+.containerrs input[type="file"] {
+  width: 88%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.containerrs textarea {
+  height: 80px;
+  resize: none;
+}
+
+.containerrs button {
+  background-color: #2f608b;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.containerrs button:hover {
+  background-color: #0056b3;
+}
+
+.containerrs p {
+  margin-top: 15px;
+  color: #555;
+  font-size: 14px;
+}
+
+.containerrs p.error {
+  color: red;
+}
+
+
+input[type="file"] {
+  padding: 10px;
+  margin: 10px 0;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #2f608b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+button:hover {
+  background-color: #2f608b;
+}
+
+p.error {
+  color: red;
+}
+
+.image-table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+.image-table th, .image-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.image-table th {
+  background-color: #f4f4f4;
+}
+
+.image-table img {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+@media (max-width: 600px) {
+  .containerrs {
+    width: 90%;
+  }
+
+  .image-table td, .image-table th {
+    font-size: 14px;
+  }
+}
+
+/* Responsive Styles for smaller screens */
+@media (max-width: 1200px) {
+  .image-table th, .image-table td {
+      padding: 8px;
+  }
+
+  .image-table img {
+      max-width: 80px;
+      max-height: 80px;
+  }
+}
+
+/* Mobile and small screen styles */
+@media (max-width: 768px) {
+  .image-table th, .image-table td {
+      padding: 6px;
+      font-size: 14px;
+  }
+
+  .image-table img {
+      max-width: 60px;
+      max-height: 60px;
+  }
+
+  .image-table {
+      font-size: 14px;
+  }
+}
+
+/* Extremely small screens (e.g., phones in portrait mode) */
+@media (max-width: 480px) {
+  .image-table th, .image-table td {
+      padding: 4px;
+      font-size: 12px;
+  }
+
+  .image-table img {
+      max-width: 50px;
+      max-height: 50px;
+  }
+
+  .image-table {
+      font-size: 12px;
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  color: #000000;
+  padding: 5px 10px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.pagination button:hover {
+  background-color: #2a86d6;
+}
+
+.pagination .active {
+  background-color: #2f608b;
+  color: white;
+  border: 1px solid #ccc;
+}

@@ -1,0 +1,128 @@
+body {
+  overflow-x: hidden;
+}
+
+table {
+    border-collapse: collapse;
+    width: 90%;
+  }
+  
+  table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  table th {
+    background-color: #f4f4f4;
+    text-align: left;
+  }
+  #appoint {
+    margin: 50px auto;
+    width: 84%;
+    overflow-x: auto;  /* Enables horizontal scrolling on small screens */
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 768px) {
+  #appoint {
+      margin: 20px auto;
+      width: 80%;
+  }
+
+  table th, table td {
+      padding: 8px;
+      font-size: 14px;
+  }
+}
+
+/* Extra Small Screens */
+@media screen and (max-width: 480px) {
+  table th, table td {
+      padding: 6px;
+      font-size: 19px;
+  }
+
+  #appoint {
+      margin: 10px 67px;
+      width: 80%;
+      margin-top: 50px;
+  }
+}
+
+/* Mobile-Friendly Table (Stacking Rows) */
+@media screen and (max-width: 400px) {
+  table {
+      border: 0;
+  }
+
+  table thead {
+      display: none; /* Hide table headers */
+  }
+
+  table tr {
+      display: block;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+  }
+
+  table td {
+      display: block;
+      text-align: right;
+      font-size: 14px;
+      border-bottom: 1px solid #ddd;
+      position: relative;
+      padding-left: 50%;
+  }
+
+  table td::before {
+      content: attr(data-label);
+      position: absolute;
+      left: 10px;
+      text-align: left;
+      font-weight: bold;
+  }
+}
+
+.logout-btn {
+  background-color: #2f608b; /* Bright red color */
+  color: white; /* Text color */
+  font-size: 16px; /* Default font size */
+  padding: 10px 20px; /* Comfortable padding */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor */
+  transition: all 0.3s ease; /* Smooth hover effect */
+  width: fit-content; /* Fit content width */
+  margin: 20px auto; /* Space above and below, center horizontally */
+  display: block; /* Block-level button */
+  z-index: 10; /* Ensure it appears above overlapping elements */
+}
+
+/* Hover effect */
+.logout-btn:hover {
+  background-color: #ffffff; /* Darker red on hover */
+  color: #2f608b;
+  border: 2px solid #2f608b;
+  transform: scale(1.05); /* Slight hover scaling */
+}
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .logout-btn {
+    font-size: 14px; /* Slightly smaller font for tablets */
+    padding: 8px 16px; /* Adjusted padding */
+  }
+}
+
+@media (max-width: 480px) {
+  .logout-btn {
+    font-size: 12px; /* Smaller font for phones */
+    padding: 6px 12px; /* Adjusted padding for small screens */
+  }
+}
+.your-element {
+  /* Existing styles for your element */
+  overflow-x: hidden; /* Hide the horizontal scrollbar */
+  overflow-y: auto;   /* Allow vertical scrolling */
+}
