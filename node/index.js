@@ -36,7 +36,7 @@ if (!fs.existsSync('./client')) {
 }
 
 // MongoDB Connection
-const mongoURI = process.env.MONGO_URI || 'mongodb://localhost:27017/imageUploadDB';
+const mongoURI = process.env.MONGO_URI || 'mongodb://127.0.0.1:27017/imageUploadDB';
 mongoose.connect(mongoURI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
