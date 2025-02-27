@@ -178,7 +178,7 @@ function App() {
                 <img
                   style={{ height: '90vh' }}
                   className="d-block w-100"
-                  src={`http://88.222.214.249:5000${item.path}`}
+                  src={`http://localhost:5000${item.path}`}
                   alt={item.name}
                 />
                 <Carousel.Caption>
